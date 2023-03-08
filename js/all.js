@@ -27,21 +27,35 @@ $(document).ready(function () {
 //  });
 
 // modal
-$(function(){
-    
-    
-    $('#modal__btn').on('click',function(){
-        $(".modal").removeClass("hidden");
-    });
-    
-    $('.js-modal-close').on('click',function(){
-        $(".modal").addClass("hidden");
-    });
+// $(function(){
 
-    // 點畫面外
-    $("body").on('click',function(){
-        $(".modal").toggle();
-      });
+//     $('#modal__btn').on('click',function(){
+//         $(".modal").removeClass("hidden");
+//     });
+    
+//     $('.js-modal-close').on('click',function(){
+//         $(".modal").addClass("hidden");
+//     });
+
+//     // 點畫面外
+//     $("body").on('click',function(){
+//         $(".modal").toggle();
+//       });
+//   });
+$("body").click(function(){
+    $(".modal").hide();
+  });
+
+   
+  // 點擊DIV時、不向上層冒泡。
+  $(".modal__btn").click(function(e){
+    e.stopPropagation();
+  });
+   
+  // 點擊按鈕時顯示或隱藏DIV
+  $(".modal__btn").click(function(e){
+    e.stopPropagation();
+    $(".modal").toggle();
   });
 
 // superfish menu
