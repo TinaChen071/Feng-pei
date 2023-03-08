@@ -10,6 +10,7 @@
     <!-- Main css -->
     <link rel="stylesheet" href="output.css">
     
+    
 </head>
 <body>
     <header class="bg-white shadow sticky top-0">
@@ -52,7 +53,7 @@
       
               <!-- Profile -->
               <div>
-                <ul class="sf-menu ">
+                <ul class="sf-menu flex items-center">
                   <li >
                     <button type="button" class="profileIcon flex rounded-full " id="user-menu-button" aria-expanded="false" aria-haspopup="true">
                       <span class="sr-only">Open user menu</span>
@@ -66,14 +67,14 @@
         
                     </button>
                     
-                    <ul class="collapse lg:visible rounded-md bg-white border-2 border-custom__secondary ">
-                      <li class="current ">
-                        <a href="#" class="nav__btn">會員</a>
+                    <ul class="collapse lg:visible rounded-md bg-white border-2 border-custom__secondary overflow-hidden top-0 transform -translate-x-1/3">
+                      <li class="current text-center">
+                        <a href="#" class="nav__btn ">會員</a>
                       </li>
-                      <li class="current ">
-                        <a href="#" class="nav__btn">會員</a>
+                      <li class="current text-center">
+                        <a href="#" class="nav__btn ">會員</a>
                       </li>
-                      <li class="current ">
+                      <li class="current text-center">
                         <a href="#" class="nav__btn">登出</a>
                       </li>
                     </ul>
@@ -104,7 +105,7 @@
                       
                       
                       <ul class="collapse lg:visible rounded-md bg-white border-2 border-custom__secondary p-3 right-0">
-                        <li class="text-xs ">
+                        <li class="text-xs font-semibold text-center">
                           最近加入商品
                         </li>
                         <!-- Product -->
@@ -134,10 +135,10 @@
                           
                         </li>
                         <!-- Check BTN -->
-                        <li class="text-xs mt-4 absolute bottom-0 ">
-                          <div class="flex ">
-                            <p class="mr-4 ">共有1樣商品</p>
-                            <a href="#" class="  rounded-md border border-transparent bg-custom__secondary py-2 px-8 text-xs font-semibold text-gray-900 hover:bg-custom__primary">查看購物車<span class="sr-only"></a>
+                        <li class="text-xs mt-4  bottom-0 ">
+                          <div class=" center__custom">
+                            <p class="py-2 mr-2 text-center">共有 1 樣商品</p>
+                            <a href="#" class="text-center  rounded-md border border-transparent bg-custom__secondary py-2 px-8 text-xs font-semibold text-gray-900 hover:bg-custom__primary">查看購物車<span class="sr-only"></a>
                           </div>
                         </li>
                         
@@ -258,7 +259,7 @@
               <li class="current nav__btn">
                 <a href="">品牌精選</a>
               </li>
-             </ul>
+            </ul>
           </nav>
       
         </div>
@@ -267,10 +268,27 @@
 
     <div class="container__custom">
       <div class="">
-          
-        <div class="grow bg-custom__primary h-96">
-        
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
         </div>
+        
       </div>
     
       <!-- Ad -->
@@ -1102,15 +1120,17 @@
     </footer>
     
       
-      <!-- jQuery main -->
-      <script src="/js/jquery-3.6.3.min.js"></script>
-      <script src="/js/all.js"></script>
-      <!-- jQuery plugins -->
-      <script src="/node_modules/superfish/dist/js/superfish.min.js"></script>
-      <script src="/node_modules/superfish/dist/js/supersubs.js"></script>
-      <script src="/node_modules/superfish/dist/js/hoverIntent.js"></script>
+    <!-- jQuery main -->
+    <script src="/js/jquery-3.6.3.min.js"></script>
+    <script src="/js/all.js"></script>
+
+    <!-- jQuery plugins -->
+    <!-- <script src="/node_modules/superfish/dist/js/superfish.min.js"></script> -->
+    <script src="/node_modules/superfish/dist/js/supersubs.js"></script>
+    <script src="/node_modules/superfish/dist/js/hoverIntent.js"></script>
+    
       
-      <!-- Custom JS -->
+    <!-- Custom JS -->
       
       
     </body>
