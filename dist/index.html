@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="/node_modules/superfish/dist/css/superfis-main.css">
     <!-- Main css -->
     <link rel="stylesheet" href="output.css">
-    
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     
 </head>
 <body>
-    <header class="bg-white shadow sticky top-0">
+    <header class="bg-white shadow sticky top-0 z-50">
         <div class="mx-auto max-w-7xl px-2 sm:px-4 lg:divide-y lg:divide-gray-200 lg:px-8">
           <div class="relative flex h-16 justify-between">
             <div class="relative z-10 flex px-2 lg:px-0">
@@ -267,28 +268,27 @@
     </header>
 
     <div class="container__custom">
+
       <div class="">
         <!-- Slider main container -->
-        <div class="swiper">
+        <div class="swiper  h-96">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide  bg-slate-500">Slide 1</div>
             <div class="swiper-slide">Slide 2</div>
             <div class="swiper-slide">Slide 3</div>
-            ...
+            
           </div>
           <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
 
           <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-prev "></div>
           <div class="swiper-button-next"></div>
 
-          <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
+          
         </div>
-        
       </div>
     
       <!-- Ad -->
@@ -979,6 +979,7 @@
       </div>
     </div>
 
+    
 
     
     <!-- Footer --> 
@@ -1128,10 +1129,11 @@
     <!-- <script src="/node_modules/superfish/dist/js/superfish.min.js"></script> -->
     <script src="/node_modules/superfish/dist/js/supersubs.js"></script>
     <script src="/node_modules/superfish/dist/js/hoverIntent.js"></script>
-    
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
       
     <!-- Custom JS -->
-      
+    
       
     </body>
 </html>
