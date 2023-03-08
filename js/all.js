@@ -25,6 +25,12 @@ $(document).ready(function () {
 //         }
 //     );
 //  });
+$(document).ready(function () {
+    $('.modal--active').click(function (e) { 
+        $('.modal').removeClass('hidden');
+        
+    });
+});
 $(document).ready(function(){
     $("ul.sf-menu").superfish({
       hoverClass:  'sfHover', //當滑鼠掠過時的class

@@ -2,12 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 .aaa {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 .aaa.active {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 @layer components {
@@ -47,4 +45,4 @@
   .item__title {
     @apply mt-1 font-semibold text-gray-900 hover:text-custom__primary;
   }
-}
+}/*# sourceMappingURL=input.css.map */
