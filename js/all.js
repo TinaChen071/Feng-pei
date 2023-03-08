@@ -25,12 +25,26 @@ $(document).ready(function () {
 //         }
 //     );
 //  });
-$(document).ready(function () {
-    $('.modal--active').click(function (e) { 
-        $('.modal').removeClass('hidden');
-        
+
+// modal
+$(function(){
+    
+    
+    $('#modal__btn').on('click',function(){
+        $(".modal").removeClass("hidden");
     });
-});
+    
+    $('.js-modal-close').on('click',function(){
+        $(".modal").addClass("hidden");
+    });
+
+    // 點畫面外
+    $("body").on('click',function(){
+        $(".modal").toggle();
+      });
+  });
+
+// superfish menu
 $(document).ready(function(){
     $("ul.sf-menu").superfish({
       hoverClass:  'sfHover', //當滑鼠掠過時的class
