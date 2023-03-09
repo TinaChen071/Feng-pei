@@ -1,6 +1,9 @@
 @layer components {
+    .container__custom {
+        @apply container mx-auto px-4 sm:px-6 lg:px-8;
+    }
     .section {
-        @apply lg:col-span-7 py-2 lg:py-5;
+        @apply  py-2 lg:py-5;
     }
     .center__custom {
         @apply flex items-center justify-center;
@@ -14,9 +17,7 @@
     .nav__btn__line {
         @apply text-gray-900 inline-flex items-center rounded-md py-3  text-sm font-medium ;
     }
-    .container__custom {
-        @apply container mx-auto max-w-7xl px-2 sm:px-4  lg:px-8;
-    }
+    
     .section__subtitle {
         @apply flex items-center justify-between py-3 lg:py-5;
     }
