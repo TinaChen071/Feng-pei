@@ -354,333 +354,219 @@
       </div>
 
       <div>
-        <!-- Breadcrumbs -->
+        
+        
+
+    
+
+  <div>
+
+
+    
+
+    <main class="mx-auto max-w-2xl px-4 lg:max-w-7xl lg:px-8">
+      <!-- Breadcrumbs -->
       <nav class="flex my-4" aria-label="Breadcrumb">
         <ol role="list" class="flex items-center space-x-4">
-          <li>
-            <div>
-              <a href="/index.html" class="header__btn">
-                <svg class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z" clip-rule="evenodd" />
-                </svg>
-                <span class="sr-only">Home</span>
-              </a>
-            </div>
-          </li>
-      
-          <li>
-            <div class="flex items-center">
-              <svg class="h-5 w-5 flex-shrink-0 text-gray-300" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
-              </svg>
-              <a href="#" class="ml-4 text-sm font-medium header__btn">主分類頁</a>
-            </div>
-          </li>
+        <li>
+        <div>
+            <a href="#" class="header__btn">
+            <svg class="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z" clip-rule="evenodd" />
+            </svg>
+            <span class="sr-only">Home</span>
+            </a>
+        </div>
+        </li>
 
-          <li>
-            <div class="flex items-center">
-              <svg class="h-5 w-5 flex-shrink-0 text-gray-300" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
-              </svg>
-              <a href="#" class="ml-4 text-sm font-medium header__btn">次分類頁</a>
-            </div>
-          </li>
+        <li>
+        <div class="flex items-center">
+            <svg class="h-5 w-5 flex-shrink-0 text-gray-300" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+            <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+            </svg>
+            <a href="#" class="ml-4 text-sm font-medium header__btn">主分類頁</a>
+        </div>
+        </li>
 
-        </ol>
+        
+    </ol>
       </nav>
-        
 
-      <!-- Slider -->
-      <div class="">
-        <!-- Slider main container -->
-        <div class="swiper rounded-md h-60 lg:h-96">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide  bg-slate-500">Slide 1</div>
-            <div class="swiper-slide bg-red-300">Slide 2</div>
-            <div class="swiper-slide bg-amber-400">Slide 3</div>
-            
+      <div class="pt-12 pb-24 lg:grid lg:grid-cols-3 lg:gap-x-8 xl:grid-cols-4">
+        <aside>
+          <h2 class="sr-only">Filters</h2>
+
+          <!-- Mobile filter dialog toggle, controls the 'mobileFilterDialogOpen' state. -->
+          <button type="button" class="inline-flex items-center lg:hidden">
+            <span class="text-sm font-medium text-gray-700">Filters</span>
+            <svg class="ml-1 h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z" />
+            </svg>
+          </button>
+
+          <div class="hidden lg:block">
+            <form class="space-y-10 divide-y divide-gray-200">
+              <div>
+                <fieldset>
+                  <legend class="block text-sm font-medium text-gray-900">Color</legend>
+                  <div class="space-y-3 pt-6">
+                    <div class="flex items-center">
+                      <input id="color-0" name="color[]" value="white" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                      <label for="color-0" class="ml-3 text-sm text-gray-600">White</label>
+                    </div>
+
+                    <div class="flex items-center">
+                      <input id="color-1" name="color[]" value="beige" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                      <label for="color-1" class="ml-3 text-sm text-gray-600">Beige</label>
+                    </div>
+
+                    <div class="flex items-center">
+                      <input id="color-2" name="color[]" value="blue" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                      <label for="color-2" class="ml-3 text-sm text-gray-600">Blue</label>
+                    </div>
+
+                    <div class="flex items-center">
+                      <input id="color-3" name="color[]" value="brown" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                      <label for="color-3" class="ml-3 text-sm text-gray-600">Brown</label>
+                    </div>
+
+                    <div class="flex items-center">
+                      <input id="color-4" name="color[]" value="green" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                      <label for="color-4" class="ml-3 text-sm text-gray-600">Green</label>
+                    </div>
+
+                    <div class="flex items-center">
+                      <input id="color-5" name="color[]" value="purple" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                      <label for="color-5" class="ml-3 text-sm text-gray-600">Purple</label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="pt-10">
+                <fieldset>
+                  <legend class="block text-sm font-medium text-gray-900">Category</legend>
+                  <div class="space-y-3 pt-6">
+                    <div class="flex items-center">
+                      <input id="category-0" name="category[]" value="new-arrivals" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                      <label for="category-0" class="ml-3 text-sm text-gray-600">All New Arrivals</label>
+                    </div>
+
+                    <div class="flex items-center">
+                      <input id="category-1" name="category[]" value="tees" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                      <label for="category-1" class="ml-3 text-sm text-gray-600">Tees</label>
+                    </div>
+
+                    <div class="flex items-center">
+                      <input id="category-2" name="category[]" value="crewnecks" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                      <label for="category-2" class="ml-3 text-sm text-gray-600">Crewnecks</label>
+                    </div>
+
+                    <div class="flex items-center">
+                      <input id="category-3" name="category[]" value="sweatshirts" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                      <label for="category-3" class="ml-3 text-sm text-gray-600">Sweatshirts</label>
+                    </div>
+
+                    <div class="flex items-center">
+                      <input id="category-4" name="category[]" value="pants-shorts" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                      <label for="category-4" class="ml-3 text-sm text-gray-600">Pants &amp; Shorts</label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="pt-10">
+                <fieldset>
+                  <legend class="block text-sm font-medium text-gray-900">Sizes</legend>
+                  <div class="space-y-3 pt-6">
+                    <div class="flex items-center">
+                      <input id="sizes-0" name="sizes[]" value="xs" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                      <label for="sizes-0" class="ml-3 text-sm text-gray-600">XS</label>
+                    </div>
+
+                    <div class="flex items-center">
+                      <input id="sizes-1" name="sizes[]" value="s" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                      <label for="sizes-1" class="ml-3 text-sm text-gray-600">S</label>
+                    </div>
+
+                    <div class="flex items-center">
+                      <input id="sizes-2" name="sizes[]" value="m" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                      <label for="sizes-2" class="ml-3 text-sm text-gray-600">M</label>
+                    </div>
+
+                    <div class="flex items-center">
+                      <input id="sizes-3" name="sizes[]" value="l" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                      <label for="sizes-3" class="ml-3 text-sm text-gray-600">L</label>
+                    </div>
+
+                    <div class="flex items-center">
+                      <input id="sizes-4" name="sizes[]" value="xl" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                      <label for="sizes-4" class="ml-3 text-sm text-gray-600">XL</label>
+                    </div>
+
+                    <div class="flex items-center">
+                      <input id="sizes-5" name="sizes[]" value="2xl" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                      <label for="sizes-5" class="ml-3 text-sm text-gray-600">2XL</label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </form>
           </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
+        </aside>
 
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev pl-4 " ></div>
-          <div class="swiper-button-next pr-4" ></div>
+        <section aria-labelledby="product-heading" class="mt-6 lg:col-span-2 lg:mt-0 xl:col-span-3">
+          <h2 id="product-heading" class="sr-only">Products</h2>
 
-          
-        </div>
+          <div class="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:gap-x-8 xl:grid-cols-3">
+            <div class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white">
+              <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-96">
+                <img src="https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-01.jpg" alt="Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green." class="h-full w-full object-cover object-center sm:h-full sm:w-full">
+              </div>
+              <div class="flex flex-1 flex-col space-y-2 p-4">
+                <h3 class="text-sm font-medium text-gray-900">
+                  <a href="#">
+                    <span aria-hidden="true" class="absolute inset-0"></span>
+                    Basic Tee 8-Pack
+                  </a>
+                </h3>
+                <p class="text-sm text-gray-500">Get the full lineup of our Basic Tees. Have a fresh shirt all week, and an extra for laundry day.</p>
+                <div class="flex flex-1 flex-col justify-end">
+                  <p class="text-sm italic text-gray-500">8 colors</p>
+                  <p class="text-base font-medium text-gray-900">$256</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white">
+              <div class="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-96">
+                <img src="https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-02.jpg" alt="Front of plain black t-shirt." class="h-full w-full object-cover object-center sm:h-full sm:w-full">
+              </div>
+              <div class="flex flex-1 flex-col space-y-2 p-4">
+                <h3 class="text-sm font-medium text-gray-900">
+                  <a href="#">
+                    <span aria-hidden="true" class="absolute inset-0"></span>
+                    Basic Tee
+                  </a>
+                </h3>
+                <p class="text-sm text-gray-500">Look like a visionary CEO and wear the same black t-shirt every day.</p>
+                <div class="flex flex-1 flex-col justify-end">
+                  <p class="text-sm italic text-gray-500">Black</p>
+                  <p class="text-base font-medium text-gray-900">$32</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- More products... -->
+          </div>
+        </section>
       </div>
+    </main>
+
     
-      <!-- 產品類別 -->
-      <div class="section">
-        <div class="section__subtitle">
-          <h2 class="section__subtitle__title">產品類別</h2>
-          <a href="#" class=" section__subtitle__more">
-            更多
-            <span aria-hidden="true"> &rarr;</span>
-          </a>
-        </div>
-      
-        <!-- Category__items -->
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+  </div>
+</div>
 
-          <div class="text-center">
-            <a href="">
-              <div class="item__title">
-                <!-- img -->
-                <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 ">
-                  <img src="https://tailwindui.com/img/ecommerce-images/home-page-04-trending-product-02.jpg" alt="Black machined steel pen with hexagonal grip and small white logo at top." class="h-full w-full object-cover object-center group-hover:opacity-75 ">
-                </div>
-                <!-- Content -->
-                <div class="mt-6">
-                  
-                  <h3 class="">
-                    <a href="#">
-                    產品類別
-                    </a>
-                  </h3> 
-              </div>
-              
-              
-              </div>
-            </a>
-            
-          </div>
-          
-
-        </div>
-
-      </div>
-
-      <!-- Ad -->
-      <div class="section">
-        <div class="grid grid-cols-3 gap-4">
-          <div class="grow bg-custom__primary h-24"></div>
-          <div class="grow bg-custom__primary h-24"></div>
-          <div class="grow bg-custom__primary h-24"></div>
-        </div>
-      </div>
-
-      <!-- 熱門商品 -->
-      <div class="section">
-        <div class="section__subtitle">
-          <h2 class="section__subtitle__title">熱門商品</h2>
-          <a href="#" class=" section__subtitle__more">
-            更多
-            <span aria-hidden="true"> &rarr;</span>
-          </a>
-        </div>
-      
-        <!-- Product -->
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
-
-          <div class="text-center">
-            <a href="">
-              <div class="">
-                <!-- img -->
-                <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200">
-                  <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-product-01.jpg" alt="Black machined steel pen with hexagonal grip and small white logo at top." class="h-full w-full object-cover object-center group-hover:opacity-75">
-                </div>
-                <!-- Content -->
-                <div class="mt-6">
-                  <p class="text-sm text-gray-500">Black</p>
-                  <h3 class="mt-1 font-semibold text-gray-900">
-                    <a href="#">
-                      
-                      Machined Pen
-                    </a>
-                  </h3>
-                  <p class="product__price">NT$ 35</p>
-              </div>
-              <!-- star -->
-              <div class="mt-3 center__custom">
-                <div class="pr-2">
-                  <div class="flex items-center">
-                    <!-- Active: "text-yellow-400", Default: "text-gray-300" -->
-                    <svg class="h-5 w-5 flex-shrink-0 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                      <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
-                    </svg>
-        
-                    <svg class="h-5 w-5 flex-shrink-0 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                      <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
-                    </svg>
-        
-                    <svg class="h-5 w-5 flex-shrink-0 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                      <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
-                    </svg>
-        
-                    <svg class="h-5 w-5 flex-shrink-0 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                      <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
-                    </svg>
-        
-                    <svg class="h-5 w-5 flex-shrink-0 text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                      <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
-                    </svg>
-                  </div>
-                  <p class="sr-only">4 out of 5 stars</p>
-                </div>
-                <p class="text-sm text-gray-500">(123)</p>
-              </div>
-              <!-- Add bag BTN -->
-              <div class="mt-6 ">
-                <a href="#" id="" class="product__btn modal__btn">查看商品<span class="sr-only">, Zip Tote Basket</span></a>
-              </div>
-              </div>
-            </a>
-            
-          </div>
-
-        </div>
-
-      </div>
-
-      <!-- 最新商品 -->
-      <div class="section">
-        <div class="section__subtitle">
-          <h2 class="section__subtitle__title">最新商品</h2>
-          <a href="#" class=" section__subtitle__more">
-            更多
-            <span aria-hidden="true"> &rarr;</span>
-          </a>
-        </div>
-      
-        <!-- Product -->
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
-
-          <div class="text-center">
-            <a href="">
-              <div class="">
-                <!-- img -->
-                <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200">
-                  <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-product-01.jpg" alt="Black machined steel pen with hexagonal grip and small white logo at top." class="h-full w-full object-cover object-center group-hover:opacity-75">
-                </div>
-                <!-- Content -->
-                <div class="mt-6">
-                  <p class="text-sm text-gray-500">Black</p>
-                  <h3 class="mt-1 font-semibold text-gray-900">
-                    <a href="#">
-                      
-                      Machined Pen
-                    </a>
-                  </h3>
-                  <p class="product__price">NT$ 35</p>
-              </div>
-              <!-- star -->
-              <div class="mt-3 center__custom">
-                <div class="pr-2">
-                  <div class="flex items-center">
-                    <!-- Active: "text-yellow-400", Default: "text-gray-300" -->
-                    <svg class="h-5 w-5 flex-shrink-0 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                      <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
-                    </svg>
-        
-                    <svg class="h-5 w-5 flex-shrink-0 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                      <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
-                    </svg>
-        
-                    <svg class="h-5 w-5 flex-shrink-0 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                      <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
-                    </svg>
-        
-                    <svg class="h-5 w-5 flex-shrink-0 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                      <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
-                    </svg>
-        
-                    <svg class="h-5 w-5 flex-shrink-0 text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                      <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
-                    </svg>
-                  </div>
-                  <p class="sr-only">4 out of 5 stars</p>
-                </div>
-                <p class="text-sm text-gray-500">(123)</p>
-              </div>
-              <!-- Add bag BTN -->
-              <div class="mt-6 ">
-                <a href="#" id="" class="product__btn modal__btn">查看商品<span class="sr-only">, Zip Tote Basket</span></a>
-              </div>
-              </div>
-            </a>
-            
-          </div>
-
-        </div>
-
-      </div>
-
-      <!-- 優惠商品 -->
-      <div class="section">
-        <div class="section__subtitle">
-          <h2 class="section__subtitle__title">優惠商品</h2>
-          <a href="#" class=" section__subtitle__more">
-            更多
-            <span aria-hidden="true"> &rarr;</span>
-          </a>
-        </div>
-      
-        <!-- Product -->
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
-
-          <div class="text-center">
-            <a href="">
-              <div class="">
-                <!-- img -->
-                <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200">
-                  <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-product-01.jpg" alt="Black machined steel pen with hexagonal grip and small white logo at top." class="h-full w-full object-cover object-center group-hover:opacity-75">
-                </div>
-                <!-- Content -->
-                <div class="mt-6">
-                  <p class="text-sm text-gray-500">Black</p>
-                  <h3 class="mt-1 font-semibold text-gray-900">
-                    <a href="#">
-                      
-                      Machined Pen
-                    </a>
-                  </h3>
-                  <p class="product__price">NT$ 35</p>
-              </div>
-              <!-- star -->
-              <div class="mt-3 center__custom">
-                <div class="pr-2">
-                  <div class="flex items-center">
-                    <!-- Active: "text-yellow-400", Default: "text-gray-300" -->
-                    <svg class="h-5 w-5 flex-shrink-0 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                      <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
-                    </svg>
-        
-                    <svg class="h-5 w-5 flex-shrink-0 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                      <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
-                    </svg>
-        
-                    <svg class="h-5 w-5 flex-shrink-0 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                      <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
-                    </svg>
-        
-                    <svg class="h-5 w-5 flex-shrink-0 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                      <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
-                    </svg>
-        
-                    <svg class="h-5 w-5 flex-shrink-0 text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                      <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
-                    </svg>
-                  </div>
-                  <p class="sr-only">4 out of 5 stars</p>
-                </div>
-                <p class="text-sm text-gray-500">(123)</p>
-              </div>
-              <!-- Add bag BTN -->
-              <div class="mt-6 ">
-                <a href="#" id="" class="product__btn modal__btn">查看商品<span class="sr-only">, Zip Tote Basket</span></a>
-              </div>
-              </div>
-            </a>
-            
-          </div>
-
-        </div>
-
-      </div>
       </div>
 
     </div>
