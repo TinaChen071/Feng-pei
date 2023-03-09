@@ -75,6 +75,10 @@ $(document).ready(function(){
     });
    });
 
+
+// Swiper
+
+
 $(document).ready(function () {
     
       const swiper = new Swiper('.swiper', {
@@ -94,8 +98,8 @@ $(document).ready(function () {
       },
 
      // auto play
-    autoplay: {
-        delay: 3000,
+      autoplay: {
+      delay: 3000,
       },
 
       // And if we need scrollbar
@@ -105,6 +109,7 @@ $(document).ready(function () {
     });
     
 });
+
 
 
 
