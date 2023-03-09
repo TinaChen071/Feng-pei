@@ -1,4 +1,5 @@
-.aaa {
+// arrow icon
+.arrow {
     transform: rotate(0deg);
     // transition: all 0.5s;
 
@@ -21,3 +22,9 @@
     --swiper-navigation-color: white;/* 单独设置按钮颜色 */
     --swiper-navigation-size: 30px;/* 设置按钮大小 */
   }
+
+
+
+.mainMenu > li > a{
+    display: block;
+}

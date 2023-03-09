@@ -1,20 +1,49 @@
-$(document).ready(function () {
-    $(".profileIcon").hover(function (e) { 
-        $('.profileMenu').toggle();
-    });
- });
+// $(document).ready(function () {
+//     $(".profileIcon").hover(function (e) { 
+//         $('.profileMenu').toggle();
+//     });
+//  });
 
 $(document).ready(function () {
     $(".mobileMenu").click(function (e) { 
         $('.mobile-menu').toggle();
     });
  });
+ $(window).resize(function() {
+  if(screen.width>768) {
+    $('.mobile-menu').hide();
+  }
+}); 
+
+// arrow icon
+// $(document).ready(function () {
+//   $('.mainMenu > li > a').click(function (e) { 
+//         $(".arrow").toggleClass("active");
+//     });
+//  });
+ // mobile navbar
+$(document).ready(function() {
+  $('.mainMenu > li > a').click(function(event) {
+    
+     event.preventDefault();
+      
+     $(this).parent().siblings().find('ul').slideUp();
+     // 將 this 以外的全部隱藏 > 找到父元素 > 找到 ul 關閉
+     $(this).parent().find('ul').slideToggle();
+        // 找出自己的 ul 做摺疊效果  
+   });
+});
 $(document).ready(function () {
-    $(".teamBtn").click(function (e) { 
-        $('.sub-menu-1').toggle();
-        $(".aaa").toggleClass("active");
-    });
- });
+  $('.mainMenu > li > ul > li > a').click(function(event) {
+    
+    event.preventDefault();
+     
+    $(this).parent().siblings().find('ul').slideUp();
+    // 將 this 以外的全部隱藏 > 找到父元素 > 找到 ul 關閉
+    $(this).parent().find('ul').slideToggle();
+       // 找出自己的 ul 做摺疊效果  
+  });
+});
 // $(document).ready(function () {
 //     $(".ddd").mouseenter(function () {
 //         $('.mobile__menu--hover').removeClass('hidden');
@@ -42,7 +71,7 @@ $(document).ready(function () {
 //         $(".modal").toggle();
 //       });
 //   });
-$("body").click(function(){
+  $("body").click(function(){
     $(".modal").hide();
   });
 
@@ -98,9 +127,9 @@ $(document).ready(function () {
       },
 
      // auto play
-      // autoplay: {
-      // delay: 3000,
-      // },
+      autoplay: {
+      delay: 3000,
+      },
 
       // And if we need scrollbar
     //   scrollbar: {
@@ -109,6 +138,8 @@ $(document).ready(function () {
     });
     
 });
+
+
 
 
 

@@ -2,11 +2,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.aaa {
+.arrow {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
 }
-.aaa.active {
+.arrow.active {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
@@ -15,6 +15,10 @@
   --swiper-theme-color: white; /* 设置Swiper风格 */
   --swiper-navigation-color: white; /* 单独设置按钮颜色 */
   --swiper-navigation-size: 30px; /* 设置按钮大小 */
+}
+
+.mainMenu > li > a {
+  display: block;
 }
 
 @layer components {

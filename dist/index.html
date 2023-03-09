@@ -39,7 +39,6 @@
                     </svg>
                   </div>
                   <input id="search" name="search" class="block w-full rounded-md border-0 bg-white py-1.5 pl-10 pr-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-custom__primary sm:text-sm sm:leading-6" placeholder="Search" type="search">
-                  <!-- <input class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none" type="search" name="search" placeholder="Search"> -->
                 </div>
               </div>
             </div>
@@ -47,14 +46,46 @@
             <!-- Header BTN -->
             <div class="relative z-10 flex items-center">
               <!-- Notification -->
-              <button type="button" class="header__btn m-2 lg:m-4">
-                <span class="sr-only">View notifications</span>
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
-                </svg>
-              </button>
+              <div>
+                <ul class="sf-menu flex items-center">
+                  <li >
+                    <button type="button" class="header__btn m-2 lg:m-4">
+                      <span class="sr-only">View notifications</span>
+                      <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                      </svg>
+                    </button>
+                    
+                    <ul class="collapse lg:visible rounded-md bg-white border-2 border-custom__secondary  right-0 top-0 transform translate-x-1/3">
+                      
+                      <!-- Product -->
+                      <li class="flex py-3 center__custom">
+                        <!-- Img -->
+                        <div class="flex-shrink-0 pr-4">
+                          <span class="h-8 w-8 rounded-full bg-green-500 flex items-center justify-center ring-8 ring-white">
+                            <svg class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                            </svg>
+                          </span>
+                        </div>
+
+                        <!-- Content -->
+                        <div class="whitespace-normal ">
+                          <h3 class="font-semibold">
+                            賣家已出貨
+                          </h3>
+                          <p class="text-sm text-gray-500">訂單 #12345</p>
+                          <p class="mt-1 text-xs font-medium text-gray-400">2023 / 03 / 09</p>
+                        </div>
+                        
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              
       
-              <!-- Profile -->
+              <!-- Member -->
               <div>
                 <ul class="sf-menu flex items-center">
                   <li >
@@ -72,13 +103,22 @@
                     
                     <ul class="collapse lg:visible rounded-md bg-white border-2 border-custom__secondary overflow-hidden top-0 transform -translate-x-1/3">
                       <li class="current text-center">
-                        <a href="#" class="nav__btn ">會員</a>
+                        <a href="#" class="nav__btn ">會員中心</a>
                       </li>
                       <li class="current text-center">
-                        <a href="#" class="nav__btn ">會員</a>
+                        <a href="#" class="nav__btn ">訂單查詢</a>
                       </li>
                       <li class="current text-center">
-                        <a href="#" class="nav__btn">登出</a>
+                        <a href="#" class="nav__btn ">收藏清單</a>
+                      </li>
+                      <li class="current text-center">
+                        <a href="#" class="nav__btn ">購物金</a>
+                      </li>
+                      <li class="current text-center">
+                        <a href="#" class="nav__btn ">地址清單</a>
+                      </li>
+                      <li class="current text-center">
+                        <a href="#" class="nav__btn font-semibold">登出</a>
                       </li>
                     </ul>
                   </li>
@@ -154,6 +194,7 @@
               
             </div>
           </div>
+
           <div class="relative z-10 flex items-center lg:hidden">
             <!-- Mobile menu button -->
             <button type="button" class="mobileMenu inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-custom__primary focus:text-custom__primary " aria-controls="mobile-menu" aria-expanded="false">
@@ -176,43 +217,8 @@
               </svg>
             </button>
           </div>
-          <!-- Mobile menu, show/hide based on menu state. -->
-        <nav class="lg:collapse hidden mobile-menu" aria-label="Global" id="mobile-menu">
-          <div class="space-y-1 px-2 pt-2 pb-3">
-            <!-- Current: "bg-gray-100 text-gray-900", Default: "text-gray-900 hover:bg-gray-50 hover:text-gray-900" -->
-            <a href="#" class="bg-gray-100 text-gray-900 block rounded-md py-2 px-3 text-base font-medium" aria-current="page">Dashboard</a>
-      
-            <div class="space-y-1">
-              <!-- Current: "bg-gray-100 text-gray-900", Default: "bg-white text-gray-600 hover:bg-gray-50 hover:text-gray-900" -->
-              <button type="button" class="teamBtn bg-white text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex w-full items-center rounded-md py-2 pr-2 text-left text-sm font-medium focus:outline-none focus:ring-2 focus:ring-indigo-500" aria-controls="sub-menu-1" aria-expanded="false">
-                <!-- Expanded: "rotate-90 text-gray-400", Collapsed: "text-gray-300" -->
-                <svg class="aaa text-gray-300 mr-2 h-5 w-5 flex-shrink-0 transform transition-colors duration-150 ease-in-out group-hover:text-gray-400" viewBox="0 0 20 20" aria-hidden="true">
-                  <path d="M6 6L14 10L6 14V6Z" fill="currentColor" />
-                </svg>
-                Team
-              </button>
-              <!-- Expandable link section, show/hide based on state. -->
-              <div class="space-y-1 hidden sub-menu-1" id="sub-menu-1">
-                <a href="#" class="group flex w-full items-center rounded-md py-2 pl-10 pr-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900">Overview</a>
-      
-                <a href="#" class="group flex w-full items-center rounded-md py-2 pl-10 pr-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900">Members</a>
-      
-                <a href="#" class="group flex w-full items-center rounded-md py-2 pl-10 pr-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900">Calendar</a>
-      
-                <a href="#" class="group flex w-full items-center rounded-md py-2 pl-10 pr-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900">Settings</a>
-              </div>
-            </div>
-      
-            <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 block rounded-md py-2 px-3 text-base font-medium">Projects</a>
-      
-            <a href="#" class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 block rounded-md py-2 px-3 text-base font-medium">Calendar</a>
-          </div>
           
-        </nav>
-      
-      
-        
-          <!-- Navbar -->
+          <!-- Desktop Navbar -->
           <nav class="hidden lg:flex " aria-label="Global">
             <!-- Current: "bg-gray-100 text-gray-900", Default: "text-gray-900 hover:bg-gray-50 hover:text-gray-900" -->
             <ul class="sf-menu lg:space-x-8 lg:py-2">
@@ -264,7 +270,77 @@
               </li>
             </ul>
           </nav>
-      
+
+          <!--Mobile Navbar -->
+          <nav class="lg:collapse hidden mobile-menu " aria-label="Global" id="mobile-menu">
+
+            <div class="space-y-1 px-2 pt-2 pb-3">
+              <ul class="space-y-1 mainMenu">
+                <li>
+                  <a href="">
+                    <button type="button" class=" bg-white text-gray-600 hover:bg-gray-50 hover:text-custom__primary group flex w-full items-center rounded-md py-2 pr-2 text-left  font-semibold "  aria-expanded="false">
+                  
+                      <svg class="arrow text-gray-300 mr-2 h-5 w-5 flex-shrink-0 transform transition-colors duration-150 ease-in-out group-hover:text-custom__primary" viewBox="0 0 20 20" aria-hidden="true">
+                        <path d="M6 6L14 10L6 14V6Z" fill="currentColor" />
+                      </svg>
+                      全部分類
+                    </button>
+                  </a>
+                  <ul class="hidden">
+                    <li>
+                      <a href="#" class="group flex w-full items-center rounded-md py-2 pl-10 pr-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-custom__primary">
+                        <svg class="arrow text-gray-300 mr-2 h-5 w-5 flex-shrink-0 transform transition-colors duration-150 ease-in-out group-hover:text-custom__primary" viewBox="0 0 20 20" aria-hidden="true">
+                          <path d="M6 6L14 10L6 14V6Z" fill="currentColor" />
+                        </svg>
+                        Calendar
+                      </a>
+                      <ul class="block">
+                        <li>
+                          <a href="#" class="group flex w-full items-center rounded-md py-2 pl-20 pr-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-custom__primary">選單3-1</a>
+                          
+                        </li>
+                      </ul>
+                    </li>
+                    
+                  </ul>
+                </li>
+                <li>
+                  <a href="">
+                    <button type="button" class=" bg-white text-gray-600 hover:bg-gray-50 hover:text-custom__primary group flex w-full items-center rounded-md py-2 pr-2 text-left  font-semibold "  aria-expanded="false">
+                  
+                      <svg class="arrow text-gray-300 mr-2 h-5 w-5 flex-shrink-0 transform transition-colors duration-150 ease-in-out group-hover:text-custom__primary" viewBox="0 0 20 20" aria-hidden="true">
+                        <path d="M6 6L14 10L6 14V6Z" fill="currentColor" />
+                      </svg>
+                      全部分類
+                    </button>
+                  </a>
+                  <ul class="hidden">
+                    <li>
+                      <a href="#" class="group flex w-full items-center rounded-md py-2 pl-10 pr-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-custom__primary">
+                        <svg class="arrow text-gray-300 mr-2 h-5 w-5 flex-shrink-0 transform transition-colors duration-150 ease-in-out group-hover:text-custom__primary" viewBox="0 0 20 20" aria-hidden="true">
+                          <path d="M6 6L14 10L6 14V6Z" fill="currentColor" />
+                        </svg>
+                        Calendar
+                      </a>
+                      <ul class="block">
+                        <li>
+                          <a href="#" class="group flex w-full items-center rounded-md py-2 pl-20 pr-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-custom__primary">選單3-1</a>
+                          
+                        </li>
+                      </ul>
+                    </li>
+                    
+                  </ul>
+                </li>
+                
+  
+                
+              </ul>
+            </div>
+            
+
+          </nav>
+               
         </div>
         
     </header>
@@ -273,7 +349,7 @@
 
       <div class="">
         <!-- Slider main container -->
-        <div class="swiper  h-96">
+        <div class="swiper rounded-md h-60 lg:h-96">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
@@ -605,31 +681,21 @@
 
     <!-- Modal -->
     <div class="modal hidden relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-      <!--
-        Background backdrop, show/hide based on modal state.
-    
-        Entering: "ease-out duration-300"
-          From: "opacity-0"
-          To: "opacity-100"
-        Leaving: "ease-in duration-200"
-          From: "opacity-100"
-          To: "opacity-0"
-      -->
+      
       <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
     
       <div class="fixed inset-0 z-10 overflow-y-auto">
         <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
-          <!--
-            Modal panel, show/hide based on modal state.
-    
-            Entering: "ease-out duration-300"
-              From: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-              To: "opacity-100 translate-y-0 sm:scale-100"
-            Leaving: "ease-in duration-200"
-              From: "opacity-100 translate-y-0 sm:scale-100"
-              To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-          -->
+          
           <div class="relative transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6">
+            <div class="absolute top-0 right-0 hidden pt-4 pr-4 sm:block">
+              <button type="button" class="modal-close js-modal-close rounded-md bg-white text-gray-400 hover:text-gray-500 ">
+                <span class="sr-only">Close</span>
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
             <div>
               <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-green-100">
                 <svg class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -637,15 +703,11 @@
                 </svg>
               </div>
               <div class="mt-3 text-center sm:mt-5">
-                <h3 class="text-base font-semibold leading-6 text-gray-900" id="modal-title">Payment successful</h3>
-                <div class="mt-2">
-                  <p class="text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur amet labore.</p>
-                </div>
+                <h3 class="text-base font-semibold leading-6 text-gray-900" id="modal-title">商品加入購物車成功</h3>
+                
               </div>
             </div>
-            <div class="mt-5 sm:mt-6">
-              <button type=" button" class="modal-close js-modal-close inline-flex w-full justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Go back to dashboard</button>
-            </div>
+            
           </div>
         </div>
       </div>
