@@ -98,9 +98,9 @@ $(document).ready(function () {
       },
 
      // auto play
-      autoplay: {
-      delay: 3000,
-      },
+      // autoplay: {
+      // delay: 3000,
+      // },
 
       // And if we need scrollbar
     //   scrollbar: {

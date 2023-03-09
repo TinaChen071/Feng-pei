@@ -6,4 +6,18 @@
         transform: rotate(90deg);
     }
 }
+// swiper-paginatio
+// .swiper-pagination > .swiper-pagination-bullet {
+//     opacity: 1;
+//     border: white solid 1px;
+//     background-color: transparent;
+// }
+// .swiper-pagination > .swiper-pagination-bullet-active {
+//     background-color: white;
+// }
 
+.swiper{
+    --swiper-theme-color: white;/* 设置Swiper风格 */
+    --swiper-navigation-color: white;/* 单独设置按钮颜色 */
+    --swiper-navigation-size: 30px;/* 设置按钮大小 */
+  }
