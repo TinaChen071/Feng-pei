@@ -2110,6 +2110,10 @@ video {
     width: 100%;
   }
 
+  .sm\:w-48{
+    width: 12rem;
+  }
+
   .sm\:max-w-sm{
     max-width: 24rem;
   }
@@ -2190,6 +2194,18 @@ video {
 
   .md\:hidden{
     display: none;
+  }
+
+  .md\:w-10{
+    width: 2.5rem;
+  }
+
+  .md\:w-40{
+    width: 10rem;
+  }
+
+  .md\:w-48{
+    width: 12rem;
   }
 
   .md\:grid-cols-2{
