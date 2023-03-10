@@ -27,6 +27,9 @@
     .section__subtitle__more {
         @apply text-base font-semibold text-gray-600 hover:text-custom__primary block items-end;
     }
+    .product__img {
+        @apply   rounded-md bg-gray-200 hover:opacity-75;
+    }
     .product__price {
         @apply mt-1 text-lime-600 font-extrabold;
     }
@@ -40,7 +43,7 @@
         @apply  mt-1 font-semibold text-gray-900 hover:text-custom__primary;
     }
     .sort__btn {
-        @apply text-gray-500 block px-4 py-2 text-sm hover:bg-red-100;
+        @apply text-gray-500 block px-4 py-2 text-sm hover:bg-gray-100;
     }
     
 }
