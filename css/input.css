@@ -57,7 +57,7 @@
     @apply flex items-center justify-center rounded-md border border-transparent bg-gray-100 py-2 px-8 text-sm font-semibold text-gray-900 hover:bg-custom__secondary;
   }
   .tag__items {
-    @apply px-2 py-2 lg:px-5 lg:py-4 font-semibold text-gray-900 bg-custom__secondary hover:bg-custom__primary rounded-full;
+    @apply px-2 py-2 lg:px-5 lg:py-4 font-semibold text-gray-900 bg-custom__secondary hover:bg-red-400 rounded-full;
   }
   .item__title {
     @apply mt-1 font-semibold text-gray-900 hover:text-custom__primary;
