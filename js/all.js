@@ -106,8 +106,6 @@ $(document).ready(function(){
 
 
 // Swiper
-
-
 $(document).ready(function () {
     
       const swiper = new Swiper('.swiper', {
@@ -137,6 +135,12 @@ $(document).ready(function () {
     //   },
     });
     
+});
+
+// Sub Product Sort
+$("#menu-button").click(function(e){
+  e.stopPropagation();
+  $("#drop-menu").toggle();
 });
 
 
