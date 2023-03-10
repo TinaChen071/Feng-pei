@@ -1995,6 +1995,10 @@ select{
   padding-top: 2rem;
 }
 
+.pt-12{
+  padding-top: 3rem;
+}
+
 .text-left{
   text-align: left;
 }
