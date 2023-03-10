@@ -2457,10 +2457,6 @@ select{
 }
 
 @media (min-width: 640px){
-  .sm\:visible{
-    visibility: visible;
-  }
-
   .sm\:absolute{
     position: absolute;
   }
@@ -2499,10 +2495,6 @@ select{
 
   .sm\:mt-16{
     margin-top: 4rem;
-  }
-
-  .sm\:mt-20{
-    margin-top: 5rem;
   }
 
   .sm\:mt-5{
@@ -2607,10 +2599,6 @@ select{
 
   .sm\:pr-9{
     padding-right: 2.25rem;
-  }
-
-  .sm\:pt-24{
-    padding-top: 6rem;
   }
 
   .sm\:text-left{
@@ -2730,14 +2718,6 @@ select{
     margin-top: 0px;
   }
 
-  .lg\:mt-24{
-    margin-top: 6rem;
-  }
-
-  .lg\:mt-16{
-    margin-top: 4rem;
-  }
-
   .lg\:block{
     display: block;
   }
@@ -2792,10 +2772,6 @@ select{
 
   .lg\:items-start{
     align-items: flex-start;
-  }
-
-  .lg\:justify-start{
-    justify-content: flex-start;
   }
 
   .lg\:gap-x-12{
@@ -2856,18 +2832,6 @@ select{
   .lg\:pt-12{
     padding-top: 3rem;
   }
-
-  .lg\:pt-32{
-    padding-top: 8rem;
-  }
-
-  .lg\:pt-20{
-    padding-top: 5rem;
-  }
-
-  .lg\:pt-16{
-    padding-top: 4rem;
-  }
 }
 
 @media (min-width: 1280px){
@@ -2914,3 +2878,4 @@ select{
          column-gap: 2rem;
   }
 }
+/*# sourceMappingURL=output.css.map */
