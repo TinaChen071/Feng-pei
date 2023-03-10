@@ -461,8 +461,8 @@
 
               <div class="aspect-w-1 aspect-h-1 w-full">
                 <!-- Tab panel, show/hide based on tab state. -->
-                <div id="tabs-2-panel-1" aria-labelledby="tabs-2-tab-1" role="tabpanel" tabindex="0">
-                  <img src="https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg" alt="Angled front view with bag zipped and handles upright." class="h-full w-full object-cover object-center sm:rounded-lg">
+                <div id="tabs-2-panel-1" class=" overflow-hidden" aria-labelledby="tabs-2-tab-1" role="tabpanel" tabindex="0">
+                  <img src="https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg" alt="Angled front view with bag zipped and handles upright." class="hover:scale-125 ease-in-out duration-500 h-full w-full object-cover object-center sm:rounded-lg">
                 </div>
 
                 <!-- More images... -->
@@ -621,26 +621,119 @@
 
           <!-- Recommands -->
           <section aria-labelledby="related-heading" class="mt-10 border-t border-gray-200 py-16 px-4 sm:px-0">
-            <h2 id="related-heading" class="text-xl font-bold text-gray-900">Customers also bought</h2>
+            <h2 id="related-heading" class="text-xl font-bold text-gray-900">其他人也在看</h2>
 
-            <div class="mt-8 grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
-              <div>
-                <div class="relative">
-                  <div class="relative h-72 w-full overflow-hidden rounded-lg">
-                    <img src="https://tailwindui.com/img/ecommerce-images/product-page-03-related-product-01.jpg" alt="Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls." class="h-full w-full object-cover object-center">
+            <div class="mt-8 grid grid-cols-3 gap-y-12 gap-4 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
+              <!-- Product -->
+              <div class="text-center">
+                <a href="">
+                  <div class="">
+                    <!-- img -->
+                    <div class="product__img aspect-w-1 aspect-h-1 w-full overflow-hidden">
+                      <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-product-01.jpg" alt="Black machined steel pen with hexagonal grip and small white logo at top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                    </div>
+                    <!-- Content -->
+                    <div class="mt-6">
+                      <p class="text-sm text-gray-500">Black</p>
+                      <h3 class="mt-1 font-semibold text-gray-900">
+                        <a href="#">
+                          
+                          Machined Pen
+                        </a>
+                      </h3>
+                      <p class="product__price">NT$ 35</p>
                   </div>
-                  <div class="relative mt-4">
-                    <h3 class="text-sm font-medium text-gray-900">Zip Tote Basket</h3>
-                    <p class="mt-1 text-sm text-gray-500">White and black</p>
+                  <!-- star -->
+                  <div class="mt-3 center__custom">
+                    <div class="pr-2">
+                      <div class="flex items-center">
+                        <!-- Active: "text-yellow-400", Default: "text-gray-300" -->
+                        <svg class="h-5 w-5 flex-shrink-0 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                        </svg>
+            
+                        <svg class="h-5 w-5 flex-shrink-0 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                        </svg>
+            
+                        <svg class="h-5 w-5 flex-shrink-0 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                        </svg>
+            
+                        <svg class="h-5 w-5 flex-shrink-0 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                        </svg>
+            
+                        <svg class="h-5 w-5 flex-shrink-0 text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                        </svg>
+                      </div>
+                      <p class="sr-only">4 out of 5 stars</p>
+                    </div>
+                    <p class="text-sm text-gray-500">(123)</p>
                   </div>
-                  <div class="absolute inset-x-0 top-0 flex h-72 items-end justify-end overflow-hidden rounded-lg p-4">
-                    <div aria-hidden="true" class="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-black opacity-50"></div>
-                    <p class="relative text-lg font-semibold text-white">$140</p>
+                  <!-- Add bag BTN -->
+                  <div class="mt-6 ">
+                    <a href="#" id="" class="product__btn modal__btn">查看商品<span class="sr-only">, Zip Tote Basket</span></a>
                   </div>
-                </div>
-                <div class="mt-6">
-                  <a href="#" class="relative flex items-center justify-center rounded-md border border-transparent bg-gray-100 py-2 px-8 text-sm font-medium text-gray-900 hover:bg-gray-200">Add to bag<span class="sr-only">, Zip Tote Basket</span></a>
-                </div>
+                  </div>
+                </a>
+                
+              </div>
+              <div class="text-center">
+                <a href="">
+                  <div class="">
+                    <!-- img -->
+                    <div class="product__img aspect-w-1 aspect-h-1 w-full overflow-hidden">
+                      <img src="https://tailwindui.com/img/ecommerce-images/home-page-02-product-01.jpg" alt="Black machined steel pen with hexagonal grip and small white logo at top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                    </div>
+                    <!-- Content -->
+                    <div class="mt-6">
+                      <p class="text-sm text-gray-500">Black</p>
+                      <h3 class="mt-1 font-semibold text-gray-900">
+                        <a href="#">
+                          
+                          Machined Pen
+                        </a>
+                      </h3>
+                      <p class="product__price">NT$ 35</p>
+                  </div>
+                  <!-- star -->
+                  <div class="mt-3 center__custom">
+                    <div class="pr-2">
+                      <div class="flex items-center">
+                        <!-- Active: "text-yellow-400", Default: "text-gray-300" -->
+                        <svg class="h-5 w-5 flex-shrink-0 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                        </svg>
+            
+                        <svg class="h-5 w-5 flex-shrink-0 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                        </svg>
+            
+                        <svg class="h-5 w-5 flex-shrink-0 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                        </svg>
+            
+                        <svg class="h-5 w-5 flex-shrink-0 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                        </svg>
+            
+                        <svg class="h-5 w-5 flex-shrink-0 text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                        </svg>
+                      </div>
+                      <p class="sr-only">4 out of 5 stars</p>
+                    </div>
+                    <p class="text-sm text-gray-500">(123)</p>
+                  </div>
+                  <!-- Add bag BTN -->
+                  <div class="mt-6 ">
+                    <a href="#" id="" class="product__btn modal__btn">查看商品<span class="sr-only">, Zip Tote Basket</span></a>
+                  </div>
+                  </div>
+                </a>
+                
               </div>
 
               <!-- More products... -->
