@@ -3,10 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 .arrow {
-  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 .arrow.active {
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .swiper {
@@ -59,4 +61,4 @@
   .item__title {
     @apply mt-1 font-semibold text-gray-900 hover:text-custom__primary;
   }
-}/*# sourceMappingURL=input.css.map */
+}
