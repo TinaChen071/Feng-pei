@@ -396,6 +396,39 @@
       </ol>
         </nav>
         
+        <!-- Progress -->
+        <nav aria-label="Progress">
+          <ol role="list" class="space-y-4 md:flex md:space-y-0 md:space-x-8">
+            <!-- step 1 -->
+            <li class="md:flex-1">
+              <!-- Completed Step -->
+              <a href="#" class="progress__bar--active group flex flex-col">
+                <span class="progress__title--active">Step 1</span>
+                <span class="text-sm font-medium">購物車</span>
+              </a>
+            </li>
+        
+            <!-- step 2 -->
+            <li class="md:flex-1">
+              <!-- Completed Step -->
+              <a href="#" class="group flex flex-col progress__bar--default">
+                <span class="progress__title--default">Step 2</span>
+                <span class="text-sm font-medium">購物明細</span>
+              </a>
+            </li>
+        
+            <!-- step-3 -->
+            <li class="md:flex-1">
+              <!-- Completed Step -->
+              <a href="#" class="group flex flex-col progress__bar--default">
+                <span class="progress__title--default">Step 3</span>
+                <span class="text-sm font-medium">完成訂購</span>
+              </a>
+            </li>
+          </ol>
+        </nav>
+        
+
         <!-- Cart -->
         <main class="  py-3 lg:py-8   ">
           <h1 class="text-3xl font-bold tracking-tight text-gray-900">購物車</h1>
@@ -405,12 +438,15 @@
               <h2 id="cart-heading" class="sr-only">Items in your shopping cart</h2>
       
               <ul role="list" class="divide-y divide-gray-200 border-t border-b border-gray-200">
-                <li class="flex py-6 sm:py-10">
+                
+                <li class="flex py-6 sm:py-10 ">
+                  <input id="color-0" name="color[]" value="white" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 self-center mr-3">
                   <div class="flex-shrink-0">
                     <img src="https://tailwindui.com/img/ecommerce-images/shopping-cart-page-01-product-01.jpg" alt="Front of men&#039;s Basic Tee in sienna." class="h-24 w-24 rounded-md object-cover object-center sm:h-48 sm:w-48">
                   </div>
       
                   <div class="ml-4 flex flex-1 flex-col justify-between sm:ml-6">
+                    
                     <div class="relative pr-9 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:pr-0">
                       <div>
                         <div class="flex justify-between">
@@ -460,6 +496,7 @@
                 </li>
       
                 <li class="flex py-6 sm:py-10">
+                  <input id="color-0" name="color[]" value="white" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 self-center mr-3">
                   <div class="flex-shrink-0">
                     <img src="https://tailwindui.com/img/ecommerce-images/shopping-cart-page-01-product-02.jpg" alt="Front of men&#039;s Basic Tee in black." class="h-24 w-24 rounded-md object-cover object-center sm:h-48 sm:w-48">
                   </div>
@@ -514,6 +551,7 @@
                 </li>
       
                 <li class="flex py-6 sm:py-10">
+                  <input id="color-0" name="color[]" value="white" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 self-center mr-3">
                   <div class="flex-shrink-0">
                     <img src="https://tailwindui.com/img/ecommerce-images/shopping-cart-page-01-product-03.jpg" alt="Insulated bottle with white base and black snap lid." class="h-24 w-24 rounded-md object-cover object-center sm:h-48 sm:w-48">
                   </div>
