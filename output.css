@@ -1064,8 +1064,16 @@ select{
   pointer-events: none;
 }
 
+.visible{
+  visibility: visible;
+}
+
 .collapse{
   visibility: collapse;
+}
+
+.static{
+  position: static;
 }
 
 .fixed{
@@ -1268,6 +1276,10 @@ select{
   display: inline-block;
 }
 
+.inline{
+  display: inline;
+}
+
 .flex{
   display: flex;
 }
@@ -1276,12 +1288,20 @@ select{
   display: inline-flex;
 }
 
+.table{
+  display: table;
+}
+
 .flow-root{
   display: flow-root;
 }
 
 .grid{
   display: grid;
+}
+
+.contents{
+  display: contents;
 }
 
 .hidden{
@@ -1458,6 +1478,10 @@ select{
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.resize{
+  resize: both;
 }
 
 .grid-cols-1{
@@ -2248,6 +2272,15 @@ select{
 
 .ring-offset-2{
   --tw-ring-offset-width: 2px;
+}
+
+.blur{
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.filter{
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition{
