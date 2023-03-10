@@ -1843,6 +1843,11 @@ select{
   padding: 1rem;
 }
 
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1903,11 +1908,6 @@ select{
   padding-bottom: 1.5rem;
 }
 
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -1918,10 +1918,6 @@ select{
 
 .pb-3{
   padding-bottom: 0.75rem;
-}
-
-.pb-36{
-  padding-bottom: 9rem;
 }
 
 .pb-4{
@@ -1976,6 +1972,10 @@ select{
   padding-top: 2.5rem;
 }
 
+.pt-12{
+  padding-top: 3rem;
+}
+
 .pt-16{
   padding-top: 4rem;
 }
@@ -1998,10 +1998,6 @@ select{
 
 .pt-8{
   padding-top: 2rem;
-}
-
-.pt-12{
-  padding-top: 3rem;
 }
 
 .text-left{
@@ -2833,10 +2829,6 @@ select{
   .lg\:divide-gray-200 > :not([hidden]) ~ :not([hidden]){
     --tw-divide-opacity: 1;
     border-color: rgb(229 231 235 / var(--tw-divide-opacity));
-  }
-
-  .lg\:bg-transparent{
-    background-color: transparent;
   }
 
   .lg\:p-8{
