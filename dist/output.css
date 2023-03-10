@@ -1544,6 +1544,16 @@ video {
      object-position: center;
 }
 
+.object-top{
+  -o-object-position: top;
+     object-position: top;
+}
+
+.object-bottom{
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
 .p-0{
   padding: 0px;
 }
