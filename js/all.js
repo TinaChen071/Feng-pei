@@ -71,6 +71,7 @@ $(document).ready(function () {
 //         $(".modal").toggle();
 //       });
 //   });
+// 點擊畫面外關閉
   $("body").click(function(){
     $(".modal").hide();
   });
@@ -141,6 +142,11 @@ $(document).ready(function () {
 $("#menu-button").click(function(e){
   e.stopPropagation();
   $("#drop-menu").toggle();
+});
+
+// Sub Product Sort 點擊畫面外關閉
+$("body").click(function(){
+  $("#drop-menu").hide();
 });
 
 
