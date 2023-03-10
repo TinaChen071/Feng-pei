@@ -74,6 +74,7 @@ $(document).ready(function () {
 // 點擊畫面外關閉
   $("body").click(function(){
     $(".modal").hide();
+    $(".modal-favorite").hide();
   });
 
    
@@ -86,6 +87,11 @@ $(document).ready(function () {
   $(".modal__btn").click(function(e){
     e.stopPropagation();
     $(".modal").toggle();
+  });
+  // 加入收藏
+  $(".modal__fav__btn").click(function(e){
+    e.stopPropagation();
+    $(".modal-favorite").toggle();
   });
 
 // superfish menu
