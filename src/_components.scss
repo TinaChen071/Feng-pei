@@ -63,5 +63,8 @@
         @apply  font-semibold text-custom__primary ;
     }
     
+    .color--active {
+        @apply focus:ring-2 focus:ring-offset-1 focus:ring-custom__primary focus:outline-none ;
+    }
     
 }
