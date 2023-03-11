@@ -8,6 +8,9 @@ module.exports = {
         'custom__secondary': '#E6EBD0',
         'custom__third': '#FFF8DC',
         'custom__alert': '#D02424',
+      },
+      minHeight: {
+        '1/2': '50%',
       }
     },
   },

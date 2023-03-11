@@ -1223,6 +1223,14 @@ select{
   margin-left: 1.5rem;
 }
 
+.mr-1{
+  margin-right: 0.25rem;
+}
+
+.mr-1\.5{
+  margin-right: 0.375rem;
+}
+
 .mr-2{
   margin-right: 0.5rem;
 }
@@ -1273,14 +1281,6 @@ select{
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.mr-1{
-  margin-right: 0.25rem;
-}
-
-.mr-1\.5{
-  margin-right: 0.375rem;
 }
 
 .block{
@@ -1347,8 +1347,8 @@ select{
   height: 1rem;
 }
 
-.h-48{
-  height: 12rem;
+.h-40{
+  height: 10rem;
 }
 
 .h-5{
@@ -1359,10 +1359,6 @@ select{
   height: 1.5rem;
 }
 
-.h-60{
-  height: 15rem;
-}
-
 .h-7{
   height: 1.75rem;
 }
@@ -1371,20 +1367,25 @@ select{
   height: 2rem;
 }
 
-.h-full{
-  height: 100%;
-}
-
-.h-40{
-  height: 10rem;
-}
-
 .h-auto{
   height: auto;
 }
 
+.h-full{
+  height: 100%;
+}
+
 .min-h-full{
   min-height: 100%;
+}
+
+.min-h-1\/2{
+  min-height: 50%;
+}
+
+.min-h-fit{
+  min-height: -moz-fit-content;
+  min-height: fit-content;
 }
 
 .w-10{
@@ -1786,11 +1787,6 @@ select{
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-custom__primary{
-  --tw-bg-opacity: 1;
-  background-color: rgb(179 204 89 / var(--tw-bg-opacity));
-}
-
 .bg-custom__secondary{
   --tw-bg-opacity: 1;
   background-color: rgb(230 235 208 / var(--tw-bg-opacity));
@@ -1799,11 +1795,6 @@ select{
 .bg-custom__third{
   --tw-bg-opacity: 1;
   background-color: rgb(255 248 220 / var(--tw-bg-opacity));
-}
-
-.bg-fuchsia-600{
-  --tw-bg-opacity: 1;
-  background-color: rgb(192 38 211 / var(--tw-bg-opacity));
 }
 
 .bg-gray-100{
@@ -1844,11 +1835,6 @@ select{
 .bg-red-500{
   --tw-bg-opacity: 1;
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-}
-
-.bg-slate-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 }
 
 .bg-white{
@@ -1939,14 +1925,14 @@ select{
   padding-bottom: 0.375rem;
 }
 
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .py-12{
   padding-top: 3rem;
   padding-bottom: 3rem;
-}
-
-.py-16{
-  padding-top: 4rem;
-  padding-bottom: 4rem;
 }
 
 .py-2{
@@ -1959,19 +1945,14 @@ select{
   padding-bottom: 0.75rem;
 }
 
-.py-6{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .pb-10{
@@ -2078,10 +2059,6 @@ select{
   text-align: right;
 }
 
-.align-middle{
-  vertical-align: middle;
-}
-
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -2154,6 +2131,11 @@ select{
   letter-spacing: -0.025em;
 }
 
+.text-custom__primary{
+  --tw-text-opacity: 1;
+  color: rgb(179 204 89 / var(--tw-text-opacity));
+}
+
 .text-gray-300{
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
@@ -2212,16 +2194,6 @@ select{
 .text-yellow-400{
   --tw-text-opacity: 1;
   color: rgb(250 204 21 / var(--tw-text-opacity));
-}
-
-.text-green-400{
-  --tw-text-opacity: 1;
-  color: rgb(74 222 128 / var(--tw-text-opacity));
-}
-
-.text-custom__primary{
-  --tw-text-opacity: 1;
-  color: rgb(179 204 89 / var(--tw-text-opacity));
 }
 
 .opacity-0{
@@ -2664,10 +2636,6 @@ select{
     border-radius: 0.5rem;
   }
 
-  .sm\:rounded-md{
-    border-radius: 0.375rem;
-  }
-
   .sm\:p-0{
     padding: 0px;
   }
@@ -2738,6 +2706,10 @@ select{
     display: none;
   }
 
+  .md\:min-h-full{
+    min-height: 100%;
+  }
+
   .md\:flex-1{
     flex: 1 1 0%;
   }
@@ -2750,12 +2722,12 @@ select{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .md\:gap-8{
-    gap: 2rem;
-  }
-
   .md\:gap-4{
     gap: 1rem;
+  }
+
+  .md\:gap-8{
+    gap: 2rem;
   }
 
   .md\:space-x-8 > :not([hidden]) ~ :not([hidden]){
@@ -2840,16 +2812,16 @@ select{
     display: none;
   }
 
-  .lg\:h-96{
-    height: 24rem;
+  .lg\:h-24{
+    height: 6rem;
   }
 
   .lg\:h-48{
     height: 12rem;
   }
 
-  .lg\:h-24{
-    height: 6rem;
+  .lg\:h-96{
+    height: 24rem;
   }
 
   .lg\:w-full{
@@ -2965,24 +2937,12 @@ select{
     margin-top: 0px;
   }
 
-  .xl\:grid{
-    display: grid;
-  }
-
   .xl\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .xl\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .xl\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .xl\:gap-8{
-    gap: 2rem;
   }
 
   .xl\:gap-x-16{
