@@ -168,6 +168,34 @@ smalls.forEach(each=>{
     }
 })
 
+// 折疊選單
+$(document).ready(function () {
+  $('.question h3').click(function (e) { 
+
+      $(this).toggleClass('active');
+      // 讓點擊到的 h3 亮起來，其他h3移除active樣式
+
+      $(this).parent().find('div').slideToggle();
+      // 讓點擊到的 h3找到父元素 .question ，再找裡面的 P 判斷收闔
+
+      $(this).parent().siblings().find('div').slideUp();
+      // 自己以外的 p 隱藏起來
+
+      $(this).parent().siblings().find('h3').removeClass('active');
+      // 自己以外的 h3 移除 active 樣式
+  });
+
+  $('.question h3').click(function (e) { 
+
+    $('svg').toggle();
+    
+    $(this).parent().siblings().find('svg').toggle();
+    // 自己以外的 h3 移除 active 樣式
+});
+
+  // .find() 可選擇符合特定條件的內層元素，所以可以透過 .parent() 選取到外層元素後，再選取特定條件的內層元素。
+});
+
 
 
 
