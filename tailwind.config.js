@@ -9,9 +9,14 @@ module.exports = {
         'custom__third': '#FFF8DC',
         'custom__alert': '#D02424',
       },
+      spacing: {
+        '128': '32rem',
+        '144': '36rem',
+      },
       minHeight: {
         '1/2': '50%',
-      }
+      },
+      
     },
   },
   plugins: [

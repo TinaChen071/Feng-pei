@@ -155,12 +155,18 @@ $("body").click(function(){
   $("#drop-menu").hide();
 });
 
-// select color
-$("color__select").click(function(e){
-  e.stopPropagation();
-  $("color__select").removeClass("color--default");
-  $("color__select").addClass("color--active");
-});
+// select img
+var main = document.querySelector(".main"),
+    big = main.querySelector(".big"),
+    smalls = main.querySelectorAll(".each")
+big.setAttribute("src",smalls[0].getAttribute("src"))
+smalls.forEach(each=>{
+    each.onclick = function(){
+        smalls.forEach(ss=>ss.classList.remove("active"))
+        each.classList.add("active")
+        big.setAttribute("src",each.getAttribute("src"))
+    }
+})
 
 
 
