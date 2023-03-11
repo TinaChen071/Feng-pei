@@ -181,15 +181,14 @@ $(document).ready(function () {
       $(this).parent().siblings().find('div').slideUp();
       // 自己以外的 p 隱藏起來
 
-      $(this).parent().siblings().find('h3').removeClass('active');
-      // 自己以外的 h3 移除 active 樣式
+      
   });
 
   $('.question h3').click(function (e) { 
 
-    $('svg').toggle();
+    $('.more').toggle();
     
-    $(this).parent().siblings().find('svg').toggle();
+    $(this).parent().siblings().find('.more').toggle();
     // 自己以外的 h3 移除 active 樣式
 });
 
