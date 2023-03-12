@@ -2766,6 +2766,10 @@ select{
     display: grid;
   }
 
+  .sm\:hidden{
+    display: none;
+  }
+
   .sm\:h-128{
     height: 32rem;
   }
