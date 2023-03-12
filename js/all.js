@@ -195,6 +195,12 @@ $(document).ready(function () {
   // .find() 可選擇符合特定條件的內層元素，所以可以透過 .parent() 選取到外層元素後，再選取特定條件的內層元素。
 });
 
+// 購物車2 mobile overlay
+$("#mobile__summary__btn").click(function(e){
+  e.stopPropagation();
+  $("#mobile__summary__overlay").toggle();
+});
+
 
 
 
