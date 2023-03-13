@@ -66,5 +66,12 @@
     .color--active {
         @apply focus:ring-2 focus:ring-offset-1 focus:ring-custom__primary focus:outline-none ;
     }
+
+    .input__title {
+        @apply block text-sm font-medium text-gray-700 mt-6;
+    }
+    .input__input {
+        @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-custom__primary focus:ring-custom__primary sm:text-sm;
+    }
     
 }
