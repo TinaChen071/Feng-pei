@@ -73,5 +73,18 @@
     .input__input {
         @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-custom__primary focus:ring-custom__primary sm:text-sm;
     }
+
+    .member__btn--default {
+        @apply border-transparent text-gray-900 hover:bg-gray-50 hover:text-gray-900  border-l-4 px-3 py-2 text-sm font-medium;
+    }
+    .member__btn--active {
+        @apply border-custom__primary bg-custom__third text-custom__primary hover:bg-custom__third hover:text-custom__primary  border-l-4 px-3 py-2 text-sm font-semibold;
+    }
+    .member__icon--default {
+        @apply text-gray-400 group-hover:text-gray-500 -ml-1 mr-3 h-6 w-6 flex-shrink-0;
+    }
+    .member__icon--active {
+        @apply text-custom__primary group-hover:text-custom__primary -ml-1 mr-3 h-6 w-6 flex-shrink-0;
+    }
     
 }
