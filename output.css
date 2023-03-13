@@ -2755,6 +2755,11 @@ select{
   border-color: rgb(99 102 241 / var(--tw-border-opacity));
 }
 
+.focus\:border-custom__primary:focus{
+  --tw-border-opacity: 1;
+  border-color: rgb(179 204 89 / var(--tw-border-opacity));
+}
+
 .focus\:text-custom__primary:focus{
   --tw-text-opacity: 1;
   color: rgb(179 204 89 / var(--tw-text-opacity));
