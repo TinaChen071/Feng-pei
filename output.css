@@ -1740,14 +1740,6 @@ select{
   flex-wrap: wrap;
 }
 
-.place-items-end{
-  place-items: end;
-}
-
-.content-end{
-  align-content: flex-end;
-}
-
 .items-start{
   align-items: flex-start;
 }
@@ -1900,10 +1892,6 @@ select{
 .divide-gray-300 > :not([hidden]) ~ :not([hidden]){
   --tw-divide-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-divide-opacity));
-}
-
-.place-self-end{
-  place-self: end;
 }
 
 .self-end{
@@ -2120,29 +2108,14 @@ select{
   --tw-bg-opacity: 0.75;
 }
 
-.object-contain{
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.object-none{
-  -o-object-fit: none;
-     object-fit: none;
-}
-
 .object-center{
   -o-object-position: center;
      object-position: center;
-}
-
-.object-bottom{
-  -o-object-position: bottom;
-     object-position: bottom;
 }
 
 .p-0{
@@ -2354,14 +2327,6 @@ select{
 
 .text-right{
   text-align: right;
-}
-
-.text-end{
-  text-align: end;
-}
-
-.align-bottom{
-  vertical-align: bottom;
 }
 
 .text-2xl{
