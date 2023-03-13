@@ -439,9 +439,9 @@
             <main class="relative mx-auto grid  grid-cols-1 gap-x-16 lg:grid-cols-2  xl:gap-x-24">
               
               <!-- Summary -->
-              <section aria-labelledby="summary-heading" class="bg-gray-50  py-10 sm:px-6 lg:col-start-2 lg:row-start-1  lg:px-0 lg:pb-16 rounded-lg mb-4 lg:mb-0">
-                <div class="mx-auto max-w-lg lg:max-w-none px-10 ">
-                  <h2 id="summary-heading" class="text-lg font-medium text-gray-900">Order summary</h2>
+              <section aria-labelledby="summary-heading" class="bg-gray-50  py-5 lg:py-10 sm:px-6 lg:col-start-2 lg:row-start-1  lg:px-0 lg:pb-16 rounded-lg mb-4 lg:mb-0">
+                <div class="mx-auto max-w-lg lg:max-w-none px-5 lg:px-10 ">
+                  
 
                   <ul role="list" class="divide-y divide-gray-200 text-sm font-medium text-gray-900">
                     <li class="flex items-start space-x-4 py-6">
@@ -451,7 +451,7 @@
                         <p class="text-gray-500">Moss</p>
                         <p class="text-gray-500">5L</p>
                       </div>
-                      <p class="flex-none text-base font-medium">$70.00</p>
+                      <p class="flex-none text-base font-medium">NT$ 70</p>
                     </li>
 
                     <!-- More products... -->
@@ -459,23 +459,18 @@
 
                   <dl class="hidden space-y-6 border-t border-gray-200 pt-6 text-sm font-medium text-gray-900 lg:block">
                     <div class="flex items-center justify-between">
-                      <dt class="text-gray-600">Subtotal</dt>
-                      <dd>$320.00</dd>
+                      <dt class="text-gray-600">商品合計</dt>
+                      <dd>NT$ 320</dd>
                     </div>
 
                     <div class="flex items-center justify-between">
-                      <dt class="text-gray-600">Shipping</dt>
-                      <dd>$15.00</dd>
-                    </div>
-
-                    <div class="flex items-center justify-between">
-                      <dt class="text-gray-600">Taxes</dt>
-                      <dd>$26.80</dd>
+                      <dt class="text-gray-600">運費</dt>
+                      <dd>NT$ 60</dd>
                     </div>
 
                     <div class="flex items-center justify-between border-t border-gray-200 pt-6">
-                      <dt class="text-base">Total</dt>
-                      <dd class="text-base">$361.80</dd>
+                      <dt class="text-base">總金額</dt>
+                      <dd class="text-base">NT$ 380</dd>
                     </div>
                   </dl>
 
@@ -651,7 +646,6 @@
                         <input id="push-email" name="push-notifications" type="radio" class="h-4 w-4 border-gray-300 text-custom__primary focus:ring-custom__primary">
                         <label for="push-email" class="ml-3 block text-sm font-medium leading-6 text-gray-900">不同購買者</label>
                       </div>
-                      </div>
                     </div>
                     
 
@@ -761,105 +755,84 @@
                     </div>
                   </section>
 
-                  <section aria-labelledby="payment-heading" class="mt-10">
-                    <h2 id="payment-heading" class="text-lg font-medium text-gray-900">Payment details</h2>
+                  <!-- 配送 -->
+                  <section aria-labelledby=" contact-info-heading">
+                    
+                    <!-- Title -->
+                    <h2 id="contact-info-heading" class="text-lg font-semibold text-gray-900 bg-custom__secondary p-2 rounded-md">配送資訊</h2>
 
-                    <div class="mt-6 grid grid-cols-3 gap-y-6 gap-x-4 sm:grid-cols-4">
-                      <div class="col-span-3 sm:col-span-4">
-                        <label for="name-on-card" class="block text-sm font-medium text-gray-700">Name on card</label>
-                        <div class="mt-1">
-                          <input type="text" id="name-on-card" name="name-on-card" autocomplete="cc-name" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
-                        </div>
-                      </div>
+                    <div class="mb-4">
 
-                      <div class="col-span-3 sm:col-span-4">
-                        <label for="card-number" class="block text-sm font-medium text-gray-700">Card number</label>
-                        <div class="mt-1">
-                          <input type="text" id="card-number" name="card-number" autocomplete="cc-number" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
-                        </div>
+                      <!-- Shipping -->
+                      <div class="flex">
+                        <label for="first-name" class="input__title flex-1">運送方式</label>
+                        <label for="first-name" class="input__title text-custom__alert">必填</label>
                       </div>
+                      <select id="country" name="country" autocomplete="country-name" class=" input__input ">
+                        <option>宅配</option>
+                        <option>7-11超商取貨</option>
+                        <option>全家超商取貨</option>
+                      </select>
 
-                      <div class="col-span-2 sm:col-span-3">
-                        <label for="expiration-date" class="block text-sm font-medium text-gray-700">Expiration date (MM/YY)</label>
-                        <div class="mt-1">
-                          <input type="text" name="expiration-date" id="expiration-date" autocomplete="cc-exp" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
-                        </div>
+                      <!-- Time -->
+                      <div class="flex">
+                        <label for="first-name" class="input__title flex-1">配送時段</label>
+                        <label for="first-name" class="input__title text-custom__alert">必填</label>
                       </div>
+                      <select id="country" name="country" autocomplete="country-name" class=" input__input ">
+                        <option>不指定</option>
+                      </select>
 
-                      <div>
-                        <label for="cvc" class="block text-sm font-medium text-gray-700">CVC</label>
-                        <div class="mt-1">
-                          <input type="text" name="cvc" id="cvc" autocomplete="csc" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
-                        </div>
+                      <!-- Memo -->
+                      <div class="flex">
+                        <label for="first-name" class="input__title flex-1">備註</label>
                       </div>
+                      <textarea id="about" name="about" rows="3" class="input__input"></textarea>
+
+
                     </div>
                   </section>
 
-                  <section aria-labelledby="shipping-heading" class="mt-10">
-                    <h2 id="shipping-heading" class="text-lg font-medium text-gray-900">Shipping address</h2>
+                  <!-- 付款資訊 -->
+                  <section aria-labelledby=" contact-info-heading">
+                    
+                    <!-- Title -->
+                    <h2 id="contact-info-heading" class="text-lg font-semibold text-gray-900 bg-custom__secondary p-2 rounded-md">付款資訊</h2>
 
-                    <div class="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-3">
-                      <div class="sm:col-span-3">
-                        <label for="company" class="block text-sm font-medium text-gray-700">Company</label>
-                        <div class="mt-1">
-                          <input type="text" id="company" name="company" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
-                        </div>
+                    <!-- Check -->
+                    <div class="mt-4 flex gap-6">
+                      
+                      <div class="flex items-center">
+                        <input id="push-everything" name="push-notifications" type="radio" class="h-4 w-4 border-gray-300 text-custom__primary focus:ring-custom__primary">
+                        <label for="push-everything" class="ml-3 block text-sm font-medium leading-6 text-gray-900">信用卡/金融卡</label>
                       </div>
-
-                      <div class="sm:col-span-3">
-                        <label for="address" class="block text-sm font-medium text-gray-700">Address</label>
-                        <div class="mt-1">
-                          <input type="text" id="address" name="address" autocomplete="street-address" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
-                        </div>
-                      </div>
-
-                      <div class="sm:col-span-3">
-                        <label for="apartment" class="block text-sm font-medium text-gray-700">Apartment, suite, etc.</label>
-                        <div class="mt-1">
-                          <input type="text" id="apartment" name="apartment" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
-                        </div>
-                      </div>
-
-                      <div>
-                        <label for="city" class="block text-sm font-medium text-gray-700">City</label>
-                        <div class="mt-1">
-                          <input type="text" id="city" name="city" autocomplete="address-level2" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
-                        </div>
-                      </div>
-
-                      <div>
-                        <label for="region" class="block text-sm font-medium text-gray-700">State / Province</label>
-                        <div class="mt-1">
-                          <input type="text" id="region" name="region" autocomplete="address-level1" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
-                        </div>
-                      </div>
-
-                      <div>
-                        <label for="postal-code" class="block text-sm font-medium text-gray-700">Postal code</label>
-                        <div class="mt-1">
-                          <input type="text" id="postal-code" name="postal-code" autocomplete="postal-code" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
-                        </div>
+                      <div class="flex items-center">
+                        <input id="push-email" name="push-notifications" type="radio" class="h-4 w-4 border-gray-300 text-custom__primary focus:ring-custom__primary">
+                        <label for="push-email" class="ml-3 block text-sm font-medium leading-6 text-gray-900">貨到付款</label>
                       </div>
                     </div>
+                    
                   </section>
 
-                  <section aria-labelledby="billing-heading" class="mt-10">
-                    <h2 id="billing-heading" class="text-lg font-medium text-gray-900">Billing information</h2>
+
+
+                  <section aria-labelledby="billing-heading" class="mt-5">
+
 
                     <div class="mt-6 flex items-center">
-                      <input id="same-as-shipping" name="same-as-shipping" type="checkbox" checked class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                      <input id="same-as-shipping" name="same-as-shipping" type="checkbox" checked class="h-4 w-4 rounded border-gray-300 text-custom__primary focus:ring-custom__primary">
                       <div class="ml-2">
-                        <label for="same-as-shipping" class="text-sm font-medium text-gray-900">Same as shipping information</label>
+                        <label for="same-as-shipping" class="text-sm font-medium text-gray-900">我同意接受服務條款</label>
                       </div>
                     </div>
                   </section>
 
                   <div class="mt-10 mb-10 md:mb-0 border-t border-gray-200 pt-6 sm:flex sm:items-center sm:justify-between">
-                    <a href="cart-3.html" class="w-full productPage__btn sm:order-last sm:ml-6 sm:w-auto">
+                    <a href="cart-3.html" class="w-full productPage__btn ">
                       送出訂單
                     </a>
                     
-                    <p class="mt-4 text-center text-sm text-gray-500 sm:mt-0 sm:text-left">You won't be charged until the next step.</p>
+
                   </div>
                 </div>
               </form>
