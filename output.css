@@ -2120,14 +2120,29 @@ select{
   --tw-bg-opacity: 0.75;
 }
 
+.object-contain{
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+.object-none{
+  -o-object-fit: none;
+     object-fit: none;
+}
+
 .object-center{
   -o-object-position: center;
      object-position: center;
+}
+
+.object-bottom{
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 
 .p-0{
