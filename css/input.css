@@ -3,12 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 .arrow {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 .arrow.active {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .swiper {
@@ -23,7 +21,7 @@
 
 @layer components {
   .container__custom {
-    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 mb-4;
   }
   .section {
     @apply py-2 lg:py-5;
@@ -109,4 +107,4 @@
   .member__icon--active {
     @apply text-custom__primary group-hover:text-custom__primary -ml-1 mr-3 h-6 w-6 flex-shrink-0;
   }
-}
+}/*# sourceMappingURL=input.css.map */

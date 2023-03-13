@@ -752,6 +752,7 @@ select{
 .container__custom{
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -2750,11 +2751,6 @@ select{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.focus\:border-indigo-500:focus{
-  --tw-border-opacity: 1;
-  border-color: rgb(99 102 241 / var(--tw-border-opacity));
-}
-
 .focus\:border-custom__primary:focus{
   --tw-border-opacity: 1;
   border-color: rgb(179 204 89 / var(--tw-border-opacity));
@@ -2795,11 +2791,6 @@ select{
 .focus\:ring-custom__primary:focus{
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(179 204 89 / var(--tw-ring-opacity));
-}
-
-.focus\:ring-indigo-500:focus{
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(99 102 241 / var(--tw-ring-opacity));
 }
 
 .focus\:ring-opacity-50:focus{
@@ -2895,6 +2886,10 @@ select{
     margin-bottom: 2rem;
   }
 
+  .sm\:mb-0{
+    margin-bottom: 0px;
+  }
+
   .sm\:ml-6{
     margin-left: 1.5rem;
   }
@@ -2909,10 +2904,6 @@ select{
 
   .sm\:mt-5{
     margin-top: 1.25rem;
-  }
-
-  .sm\:mb-0{
-    margin-bottom: 0px;
   }
 
   .sm\:block{
@@ -3420,3 +3411,4 @@ select{
          column-gap: 2rem;
   }
 }
+/*# sourceMappingURL=output.css.map */
