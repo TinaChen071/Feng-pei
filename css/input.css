@@ -70,6 +70,9 @@
   .productPage__btn {
     @apply flex items-center justify-center rounded-md border border-transparent bg-custom__secondary py-2 px-8 text-sm font-semibold text-gray-900 transition duration-700 ease-in-out hover:-translate-y-1;
   }
+  .canael__btn {
+    @apply flex items-center justify-center rounded-md border-2 border-custom__secondary bg-white py-2 px-8 text-sm font-semibold text-gray-900 transition duration-700 ease-in-out hover:-translate-y-1;
+  }
   .checkbox__custom {
     @apply h-4 w-4 rounded border-gray-300 text-custom__primary focus:ring-custom__primary;
   }
