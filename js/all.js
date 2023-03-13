@@ -21,6 +21,7 @@ $(document).ready(function () {
 //         $(".arrow").toggleClass("active");
 //     });
 //  });
+
  // mobile navbar
 $(document).ready(function() {
   $('.mainMenu > li > a').click(function(event) {
