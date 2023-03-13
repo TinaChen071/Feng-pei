@@ -2679,6 +2679,11 @@ select{
   color: rgb(15 118 110 / var(--tw-text-opacity));
 }
 
+.hover\:text-indigo-500:hover{
+  --tw-text-opacity: 1;
+  color: rgb(99 102 241 / var(--tw-text-opacity));
+}
+
 .hover\:opacity-100:hover{
   opacity: 1;
 }
@@ -2878,6 +2883,10 @@ select{
     height: 12rem;
   }
 
+  .sm\:h-32{
+    height: 8rem;
+  }
+
   .sm\:w-40{
     width: 10rem;
   }
@@ -2892,6 +2901,10 @@ select{
 
   .sm\:w-full{
     width: 100%;
+  }
+
+  .sm\:w-32{
+    width: 8rem;
   }
 
   .sm\:max-w-sm{
