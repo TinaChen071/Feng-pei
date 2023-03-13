@@ -521,14 +521,15 @@
               </section>
 
               <!-- Content -->
-              <form class=" lg:col-start-1 lg:row-start-1  lg:pb-16">
+              <form class=" lg:col-start-1 lg:row-start-1  lg:pb-16 ">
                 <div class="mx-auto ">
-                  <section aria-labelledby="contact-info-heading">
+                  <!-- 購買者 -->
+                  <section aria-labelledby=" contact-info-heading">
                     
                     <h2 id="contact-info-heading" class="text-lg font-semibold text-gray-900 bg-custom__secondary p-2 rounded-md">購買者資料</h2>
                     
 
-                    <div class="">
+                    <div class="mb-4">
                       <!-- Name -->
                       <div class=" grid sm:grid-cols-12 sm:gap-6">
                         <div class="col-span-6">
@@ -617,10 +618,144 @@
                             </div>
                           </div>
                           <div class="sm:col-span-3 self-end">
-                            <input type="text" name="expiration-date" id="expiration-date" autocomplete="cc-exp" class="input__input" placeholder="請輸入地址">
+                            <input type="text" id="address" name="address" autocomplete="street-address" class="input__input" placeholder="請輸入地址">
                           </div>
                         </div>
                         
+                      </div>
+
+                      <!-- Check -->
+                      <div class="mt-6 flex items-center">
+                        <input id="same-as-shipping" name="same-as-shipping" type="checkbox" checked class="h-4 w-4 rounded border-gray-300 text-custom__primary focus:ring-custom__primary">
+                        <div class="ml-2">
+                          <label for="same-as-shipping" class="text-sm font-medium text-gray-900">記住此收件者資料</label>
+                        </div>
+                      </div>
+
+                    </div>
+                  </section>
+
+                  <!-- 收件者 -->
+                  <section aria-labelledby=" contact-info-heading">
+                    
+                    <!-- Title -->
+                    <h2 id="contact-info-heading" class="text-lg font-semibold text-gray-900 bg-custom__secondary p-2 rounded-md">收件者資料</h2>
+
+                    <!-- Check -->
+                    <div class="mt-4 flex gap-6">
+                      <div class="flex items-center">
+                        <input id="push-everything" name="push-notifications" type="radio" class="h-4 w-4 border-gray-300 text-custom__primary focus:ring-custom__primary">
+                        <label for="push-everything" class="ml-3 block text-sm font-medium leading-6 text-gray-900">同購買者</label>
+                      </div>
+                      <div class="flex items-center">
+                        <input id="push-email" name="push-notifications" type="radio" class="h-4 w-4 border-gray-300 text-custom__primary focus:ring-custom__primary">
+                        <label for="push-email" class="ml-3 block text-sm font-medium leading-6 text-gray-900">不同購買者</label>
+                      </div>
+                      </div>
+                    </div>
+                    
+
+                    <div class="mb-4">
+                      <!-- Name -->
+                      <div class=" grid sm:grid-cols-12 sm:gap-6">
+                        <div class="col-span-6">
+                          <div class="flex">
+                            <label for="first-name" class="input__title flex-1">姓氏</label>
+                            <label for="first-name" class="input__title text-custom__alert">必填</label>
+                          </div>
+                          <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="input__input" placeholder="Chen">
+                        </div>
+        
+                        <div class="col-span-6">
+                          <div class="flex">
+                            <label for="first-name" class="input__title flex-1">名字</label>
+                            <label for="first-name" class="input__title text-custom__alert">必填</label>
+                          </div>
+                          <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="input__input" placeholder="Tina">
+                        </div>
+                      </div>
+
+                      <!-- Email -->
+                      <div>
+                        <div class="flex">
+                          <label for="first-name" class="input__title flex-1">電子郵件</label>
+                          <label for="first-name" class="input__title text-custom__alert">必填</label>
+                        </div>
+                        <div class="mt-1">
+                          <input type="email" id="email-address" name="email-address" autocomplete="email" class="input__input" placeholder="you@example.com">
+                        </div>
+                      </div>
+
+                      <!-- Cell phone -->
+                      <div class="">
+                        <div class="flex">
+                          <label for="first-name" class="input__title flex-1">手機號碼</label>
+                          <label for="first-name" class="input__title text-custom__alert">必填</label>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-y-6 gap-x-4 sm:grid-cols-4 mt-1">
+                          <select id="country" name="country" autocomplete="country-name" class="input__input">
+                            <option>+886</option>
+                            <option>+86</option>
+                          </select>
+                          <div class="col-span-2 sm:col-span-3 self-end">
+                            <input type="text" name="expiration-date" id="expiration-date" autocomplete="cc-exp" class="input__input">
+                          </div>
+                        </div>
+                        
+                      </div>
+
+                      <!-- Phone -->
+                      <div class="">
+                        <div class="flex">
+                          <label for="first-name" class="input__title flex-1">聯絡電話</label>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-y-6 gap-x-4 sm:grid-cols-4 mt-1">
+                          <select id="country" name="country" autocomplete="country-name" class="input__input">
+                            <option>(02)</option>
+                            <option>(03)</option>
+                          </select>
+                          <div class="col-span-2 sm:col-span-3 self-end">
+                            <input type="text" name="expiration-date" id="expiration-date" autocomplete="cc-exp" class="input__input">
+                          </div>
+                        </div>
+                        
+                      </div>
+
+                      <!-- Address -->
+                      <div class="">
+                        <div class="flex">
+                          <label for="first-name" class="input__title flex-1">地址</label>
+                          <label for="first-name" class="input__title text-custom__alert">必填</label>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-5 gap-y-6 gap-x-4  mt-1">
+                          <div class="sm:col-span-2">
+                            <div class="grid grid-cols-2 gap-y-6 gap-x-4 ">
+                              <select id="country" name="country" autocomplete="country-name" class=" input__input ">
+                                <option>台北市</option>
+                                <option>新北市</option>
+                              </select>
+                              <select id="country" name="country" autocomplete="country-name" class=" input__input">
+                                <option>中山區</option>
+                                <option>松山區</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="sm:col-span-3 self-end">
+                            <input type="text" id="address" name="address" autocomplete="street-address" class="input__input" placeholder="請輸入地址">
+                          </div>
+                        </div>
+                        
+                      </div>
+
+                      <!-- Check -->
+                      <div class="mt-6 flex items-center">
+                        <input id="same-as-shipping" name="same-as-shipping" type="checkbox" checked class="h-4 w-4 rounded border-gray-300 text-custom__primary focus:ring-custom__primary">
+                        <div class="ml-2">
+                          <label for="same-as-shipping" class="text-sm font-medium text-gray-900">記住此收件者資料</label>
+                        </div>
                       </div>
 
                     </div>
