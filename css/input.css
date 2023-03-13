@@ -3,10 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 .arrow {
-  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 .arrow.active {
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .swiper {
@@ -83,4 +85,4 @@
   .color--active {
     @apply focus:ring-2 focus:ring-offset-1 focus:ring-custom__primary focus:outline-none;
   }
-}/*# sourceMappingURL=input.css.map */
+}
