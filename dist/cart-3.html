@@ -509,7 +509,7 @@
     <!-- Content -->
     <div class="container__custom ">
       
-      <main class="">
+      <main >
         <!-- Breadcrumbs -->
         <nav class="flex my-4" aria-label="Breadcrumb">
           <ol role="list" class="flex items-center space-x-4">
@@ -571,9 +571,9 @@
         
 
         <!-- Order notify -->
-        <main class="  py-3 lg:py-8 text-center  ">
+        <div class="  py-3 lg:py-8 ">
           <!-- Content -->
-          <div>
+          <div class="text-center">
             <h1 class="text-lg font-bold tracking-tight text-gray-900">
               感謝您的購買!
               <br>
@@ -582,7 +582,7 @@
           </div>
 
           <!-- Chart -->
-          <form class="divide-y divide-gray-200 lg:col-span-9" action="#" method="POST">
+          <form class="divide-y divide-gray-200 lg:col-span-9 mb-4" action="#" method="POST">
             <!-- Profile section -->
             <div class=" px-4 ">
 
@@ -639,19 +639,14 @@
           
                         <!-- BTN -->
                         <div class="hidden  lg:flex lg:items-center lg:justify-end lg:space-x-4">
-                          <a href="#" class="flex items-center justify-center rounded-md border border-gray-300 bg-white py-2 px-2.5 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-custom__primary focus:ring-offset-2 text-center">
+                          <a href="member-2-1.html" class="flex items-center justify-center rounded-md border border-gray-300 bg-white py-2 px-2.5 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-custom__primary focus:ring-offset-2 text-center">
                             <span>訂單明細</span>
                             
-                          </a>
-                          <a href="#" class="flex items-center justify-center rounded-md border border-gray-300 bg-white py-2 px-2.5 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-custom__primary focus:ring-offset-2 text-center">
-                            <span>再次購買</span>
-                            <span class="sr-only">for order WU88191111</span>
                           </a>
                         </div>
                       </div>
           
                       <!-- Products -->
-                      <h4 class="sr-only">Items</h4>
                       <ul role="list" class="divide-y divide-gray-200">
                         <li class="p-4 sm:p-6">
                           <div class="flex items-center sm:items-start">
@@ -660,7 +655,7 @@
                             </div>
                             <div class="ml-6 flex-1 text-sm">
                               <div class="font-medium text-gray-900 flex justify-between">
-                                <div>
+                                <div class="text-start">
                                   <div class="flex justify-between">
                                     <h4 class="text-sm">
                                       <a href="#" class="font-medium text-gray-700 hover:text-gray-800">Artwork Tee</a>
@@ -678,11 +673,9 @@
                           <div class=" lg:hidden ">
                             <div class=" mt-6 flex items-center space-x-4 divide-x divide-gray-200 border-t border-gray-200 pt-4 text-sm font-medium ">
                               <div class="flex flex-1 justify-center">
-                                <a href="#" class="whitespace-nowrap text-custom__primary ">訂單明細</a>
+                                <a href="member-2-1.html" class="whitespace-nowrap text-custom__primary ">訂單明細</a>
                               </div>
-                              <div class="flex flex-1 justify-center pl-4">
-                                <a href="#" class="whitespace-nowrap text-custom__primary ">再次購買</a>
-                              </div>
+                              
                             </div>
                           </div>
                         </li>
@@ -700,8 +693,14 @@
 
           </form>
 
+          <!-- BTN -->
+          <a href="../index.html">
+            <button type="submit" class="productPage__btn w-full sm:w-48 mx-auto">回到首頁
+            </button>
+          </a>
 
-        </main>
+
+        </div>
 
     </div>
 
