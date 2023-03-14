@@ -3274,6 +3274,10 @@ select{
     height: 24rem;
   }
 
+  .lg\:h-128{
+    height: 32rem;
+  }
+
   .lg\:w-full{
     width: 100%;
   }
