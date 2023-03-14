@@ -203,16 +203,6 @@ $("#mobile__summary__btn").click(function(e){
 });
 
 // 超商取貨 BTN
-$(document).ready(function () {
-  $(".store__btn").hide(); 
-  $("#store").change(function(){
-      if($("#store").val() == "store2") {
-          $(".store__btn").show(); 
-      } else {
-          $(".store__btn").hide(); 
-      } 
-  });
-});
 
 
 
